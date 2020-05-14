@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#313131"
+    tools:context=".MainActivity">
+
+    <ImageView
+        app:srcCompat="@drawable/coronavirus"
+        android:id="@+id/imageView"
+        android:layout_width="217dp"
+        android:layout_height="226dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnStates"
+        android:layout_width="217dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="32dp"
+        android:background="#55000000"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/labelSpnStates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POR ESTADO"
+        android:textColor="#55000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spnStates"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/labelTxt1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#55000000"
+        android:padding="10dp"
+        android:text="Confirmados"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/spnStates" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="0"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/labelTxt1"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/labelTxt2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="#55000000"
+        android:padding="10dp"
+        android:text="Casos"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/labelTxt1"
+        app:layout_constraintTop_toBottomOf="@+id/labelTxt1" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="0"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt1"
+        app:layout_constraintTop_toTopOf="@+id/labelTxt2" />
+
+    <TextView
+        android:id="@+id/labelTxt3"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="#55000000"
+        android:padding="10dp"
+        android:text="Recuperados"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/labelTxt2"
+        app:layout_constraintTop_toBottomOf="@+id/labelTxt2" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="0"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt2"
+        app:layout_constraintTop_toTopOf="@+id/labelTxt3" />
+
+    <TextView
+        android:id="@+id/labelTxt4"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="#55000000"
+        android:padding="10dp"
+        android:text="Mortes"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/labelTxt3"
+        app:layout_constraintTop_toBottomOf="@+id/labelTxt3" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="0"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt3"
+        app:layout_constraintTop_toTopOf="@+id/labelTxt4" />
+
+    <TextView
+        android:id="@+id/labelLatalidade"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#55000000"
+        android:padding="10dp"
+        android:text="Letalidade"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/labelTxt4"
+        app:layout_constraintTop_toBottomOf="@+id/labelTxt4" />
+
+    <TextView
+        android:id="@+id/txtLetalidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="0"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt4"
+        app:layout_constraintTop_toTopOf="@+id/labelLatalidade" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
