@@ -1,2 +1,2 @@
 # Covid19App
-App que traz os casos de Covid19 pelo Brasil
+App que monitora os casos de Covid19 pelo Brasil
