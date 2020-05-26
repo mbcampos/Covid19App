@@ -8,11 +8,13 @@
     android:background="#313131"
     tools:context=".MainActivity">
 
+    //app:srcCompat="@drawable/coronavirus"
+
     <ImageView
-        app:srcCompat="@drawable/coronavirus"
         android:id="@+id/imageView"
-        android:layout_width="217dp"
-        android:layout_height="226dp"
+        app:srcCompat="@drawable/coronavirus"
+        android:layout_width="219dp"
+        android:layout_height="174dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

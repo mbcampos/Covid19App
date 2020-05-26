@@ -2,7 +2,7 @@ package com.example.coronavirus;
 
 import java.util.Date;
 
-class Historico {
+class Country {
     private String country;
     private Integer cases;
     private Integer confirmed;
