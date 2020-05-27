@@ -1,4 +1,4 @@
-package com.matheuscampos.coronavirus;
+package com.matheuscampos.covid19app;
 
 import java.util.Date;
 
