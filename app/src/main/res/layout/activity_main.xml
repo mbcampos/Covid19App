@@ -8,8 +8,6 @@
     android:background="#313131"
     tools:context=".MainActivity">
 
-    //app:srcCompat="@drawable/coronavirus"
-
     <ImageView
         android:id="@+id/imageView"
         app:srcCompat="@drawable/coronavirus"
