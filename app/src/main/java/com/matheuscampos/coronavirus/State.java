@@ -1,4 +1,4 @@
-package com.example.coronavirus;
+package com.matheuscampos.coronavirus;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package com.example.coronavirus;
+package com.matheuscampos.coronavirus;
 
 import android.content.Context;
 import android.os.AsyncTask;
